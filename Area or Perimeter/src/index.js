@@ -5,11 +5,12 @@
 
 // Note: for the purposes of this kata you will assume that it is
 
-
 // Write the function to find the areaOrPerimeter obtained.
-const areaOrPerimeter = function(l , w) {
-      //your code here
-    
+const areaOrPerimeter = function (l, w) {
+  if (l === w) {
+    return l * w;
   }
+  return 2 * (l + w);
+};
 
 //Use SpecRunner to check the Test Cases.
